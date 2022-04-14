@@ -29,7 +29,7 @@ app.get('/api/auth', async(req, res, next)=> {
 app.get('/api/notes', async(req, res, next)=> {
   try {
     const user = await User.byToken(req.headers.authorization);
-    res.send('TODO Send the purchases for this user');
+    res.send('TODO Send the notes for this user');
   }
   catch(ex){
     next(ex);
